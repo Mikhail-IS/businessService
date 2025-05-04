@@ -41,7 +41,7 @@ public class StatsService {
     }
 
     public int numberMonthMoreAverage(long[] sales) {
-        int numberMonth = (int) averageSales(sales);
+        int numberMonth = averageSales(sales);
         int quantityMonth = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] > numberMonth) {
@@ -54,7 +54,7 @@ public class StatsService {
     }
 
     public int numberMonthBelowAverage(long[] sales) {
-        int numberMonth = (int) averageSales(sales);
+        int numberMonth = averageSales(sales);
         int quantityMonth = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < numberMonth) {
