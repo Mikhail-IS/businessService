@@ -11,8 +11,8 @@ public class StatsServiceTest {
 
         long[] sales = {120200, 200000, 137000, 400000, 666000, 550000, 500000, 430000, 550500, 233700, 200200, 700000};
 
-        int expectedSum = 4687600;
-        int actualSum = service.sumSales(sales);
+        long expectedSum = 4687600;
+        long actualSum = service.sumSales(sales);
 
         Assertions.assertEquals(expectedSum, actualSum);
 
@@ -24,8 +24,8 @@ public class StatsServiceTest {
 
         long[] sales = {120200, 200000, 137000, 400000, 666000, 550000, 500000, 430000, 550500, 233700, 200200, 700000};
 
-        int expectedSum = 390633;
-        int actualSum = service.averageSales(sales);
+        long expectedSum = 390633;
+        long actualSum = service.averageSales(sales);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
@@ -36,8 +36,8 @@ public class StatsServiceTest {
 
         long[] sales = {120200, 200000, 137000, 400000, 666000, 550000, 500000, 430000, 550500, 233700, 200200, 700000};
 
-        int expectedSum = 12;
-        int actualSum = service.maxSales(sales);
+        long expectedSum = 12;
+        long actualSum = service.maxSales(sales);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
@@ -48,8 +48,8 @@ public class StatsServiceTest {
 
         long[] sales = {120200, 200000, 137000, 400000, 666000, 550000, 500000, 430000, 550500, 233700, 200200, 700000};
 
-        int expectedSum = 1;
-        int actualSum = service.minSales(sales);
+        long expectedSum = 1;
+        long actualSum = service.minSales(sales);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
@@ -60,8 +60,8 @@ public class StatsServiceTest {
 
         long[] sales = {120200, 200000, 137000, 400000, 666000, 550000, 500000, 430000, 550500, 233700, 200200, 700000};
 
-        int expected = 7;
-        int actual = service.numberMonthMoreAverage(sales);
+        long expected = 7;
+        long actual = service.numberMonthMoreAverage(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -72,8 +72,8 @@ public class StatsServiceTest {
 
         long[] sales = {120200, 200000, 137000, 400000, 666000, 550000, 500000, 430000, 550500, 233700, 200200, 700000};
 
-        int expected = 5;
-        int actual = service.numberMonthBelowAverage(sales);
+        long expected = 5;
+        long actual = service.numberMonthBelowAverage(sales);
 
         Assertions.assertEquals(expected, actual);
     }
